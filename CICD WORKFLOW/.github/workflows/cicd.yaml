@@ -1,26 +1,23 @@
-name: first cicd yaml handson
+
+name: First CI CD YAML Hands-on
 
 on:
   push:
     branches:
       - main
-      
+
   pull_request:
     branches:
       - main
 
-
 jobs:
-
   build-and-push-image:
-
-    name: build the jar and image and docker login and docker image push
-
+    name: Build JAR and Docker Image
     runs-on: ubuntu-latest
 
     steps:
-      - name: get the code from the github
+      - name: Get the code from GitHub
         uses: actions/checkout@v4
 
-      - name: run an logs
-        run: echo"testing code ok "
+      - name: Print execution logs
+        run: echo "Testing code OK"
