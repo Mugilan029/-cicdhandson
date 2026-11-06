@@ -15,7 +15,7 @@ public class UserController {
     public List<User> getUsers() {
 
         return Arrays.asList(
-                new User(1, "Mugilan", "Java Developer"),
+                new User(1, "Mugislan", "Java Developer"),
                 new User(2, "Arun", "Angular Developer"),
                 new User(3, "Kumar", "Spring Boot Developer")
         );
