@@ -1,0 +1,25 @@
+name: first cicd yaml handson
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+
+jobs:
+
+  build-and-push-image:
+
+    name: build the jar and image and docker login and docker image push
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: get the code from the github
+        uses: actions/checkout@v4
+
+      - name: run an logs
+        run: echo"testing code ok "
